@@ -1,0 +1,811 @@
+{
+  "id": "01a12182-4963-7232-a8a7-270051b5fa37",
+  "type": "ionq.circuit.v1",
+  "status": "completed",
+  "name": "adapted_p7_q2_b2",
+  "metadata": {
+    "b": "2",
+    "p": "7",
+    "q": "2",
+    "alpha": "6",
+    "method": "adapted",
+    "x_bits": "3",
+    "second_bits": "3",
+    "measured_qubits": "6"
+  },
+  "backend": "qpu.forte-1",
+  "parent_job_id": null,
+  "session_id": null,
+  "dry_run": false,
+  "failure": null,
+  "cost_model": "2QGE_operations",
+  "shots": 2048,
+  "submitted_at": "2026-10-09T16:32:29.034Z",
+  "started_at": "2026-10-09T22:38:25.434Z",
+  "completed_at": "2026-10-09T23:06:31.437Z",
+  "execution_duration_ms": 262946,
+  "predicted_execution_duration_ms": 146517,
+  "predicted_wait_time_ms": null,
+  "output": {
+    "compilation": {
+      "precision": "1E-3",
+      "gate_basis": "ZZ",
+      "service_version": "v0.4",
+      "compiled_circuits": {
+        "ionq.native.v1": {
+          "id": "809741f4-9e5f-45b3-9046-dc0ba92b9080",
+          "format": "ionq.native.v1",
+          "media_type": "application/json"
+        },
+        "ionq.qasm3.v1": {
+          "id": "d2f37186-70e0-49e8-a120-77c568b944fe",
+          "format": "ionq.qasm3.v1",
+          "media_type": "text/plain"
+        }
+      }
+    },
+    "error_mitigation": {
+      "debiasing": {
+        "variants": [
+          {
+            "shots": 64,
+            "results": {
+              "ionq.result.probabilities.json.v2": {
+                "id": "f47800d9-b3a1-45d4-87cd-fcbd154c7c03",
+                "format": "ionq.result.probabilities.json.v2",
+                "media_type": "application/json"
+              }
+            },
+            "qubit_map": [
+              5,
+              6,
+              1,
+              8,
+              3,
+              4,
+              2,
+              7,
+              0
+            ],
+            "variant_id": "06ac9172-0327-79bf-8000-579b62f99fff"
+          },
+          {
+            "shots": 64,
+            "results": {
+              "ionq.result.probabilities.json.v2": {
+                "id": "7f2644a3-fd68-490a-bc63-a224918464a5",
+                "format": "ionq.result.probabilities.json.v2",
+                "media_type": "application/json"
+              }
+            },
+            "qubit_map": [
+              5,
+              6,
+              1,
+              8,
+              3,
+              4,
+              2,
+              7,
+              0
+            ],
+            "variant_id": "06ac9172-0329-7fda-8000-c8edee458f89"
+          },
+          {
+            "shots": 64,
+            "results": {
+              "ionq.result.probabilities.json.v2": {
+                "id": "a96b07e2-9e18-465b-9943-5b97e61bce88",
+                "format": "ionq.result.probabilities.json.v2",
+                "media_type": "application/json"
+              }
+            },
+            "qubit_map": [
+              2,
+              7,
+              6,
+              0,
+              1,
+              8,
+              5,
+              3,
+              4
+            ],
+            "variant_id": "06ac9172-032c-7292-8000-20a3c4b666d9"
+          },
+          {
+            "shots": 64,
+            "results": {
+              "ionq.result.probabilities.json.v2": {
+                "id": "688977b7-a045-49d0-a00c-8f487bc4ad3b",
+                "format": "ionq.result.probabilities.json.v2",
+                "media_type": "application/json"
+              }
+            },
+            "qubit_map": [
+              2,
+              7,
+              6,
+              0,
+              1,
+              8,
+              5,
+              3,
+              4
+            ],
+            "variant_id": "06ac9172-032e-7965-8000-cab3b9f0982e"
+          },
+          {
+            "shots": 64,
+            "results": {
+              "ionq.result.probabilities.json.v2": {
+                "id": "b90e2e33-1ec3-4928-ac49-ef8fb631d1f8",
+                "format": "ionq.result.probabilities.json.v2",
+                "media_type": "application/json"
+              }
+            },
+            "qubit_map": [
+              1,
+              2,
+              8,
+              4,
+              5,
+              7,
+              3,
+              6,
+              0
+            ],
+            "variant_id": "06ac9172-0330-7cca-8000-b2e56efc012e"
+          },
+          {
+            "shots": 64,
+            "results": {
+              "ionq.result.probabilities.json.v2": {
+                "id": "dbbc4d0a-04d7-4d00-9750-2df9effd9b31",
+                "format": "ionq.result.probabilities.json.v2",
+                "media_type": "application/json"
+              }
+            },
+            "qubit_map": [
+              1,
+              2,
+              8,
+              4,
+              5,
+              7,
+              3,
+              6,
+              0
+            ],
+            "variant_id": "06ac9172-0333-712f-8000-f3b573cc03a6"
+          },
+          {
+            "shots": 64,
+            "results": {
+              "ionq.result.probabilities.json.v2": {
+                "id": "7c123223-ec2c-42eb-84ae-d97b4b5c73e3",
+                "format": "ionq.result.probabilities.json.v2",
+                "media_type": "application/json"
+              }
+            },
+            "qubit_map": [
+              0,
+              4,
+              3,
+              5,
+              8,
+              6,
+              2,
+              1,
+              7
+            ],
+            "variant_id": "06ac9172-0335-7573-8000-524e76ee789e"
+          },
+          {
+            "shots": 64,
+            "results": {
+              "ionq.result.probabilities.json.v2": {
+                "id": "eb58c19b-34c8-49fe-b567-83cb0d115c10",
+                "format": "ionq.result.probabilities.json.v2",
+                "media_type": "application/json"
+              }
+            },
+            "qubit_map": [
+              0,
+              4,
+              3,
+              5,
+              8,
+              6,
+              2,
+              1,
+              7
+            ],
+            "variant_id": "06ac9172-0337-7860-8000-ea009ffbb1c1"
+          },
+          {
+            "shots": 64,
+            "results": {
+              "ionq.result.probabilities.json.v2": {
+                "id": "501482dc-cc5a-403a-aada-eb1fd7eaf0e5",
+                "format": "ionq.result.probabilities.json.v2",
+                "media_type": "application/json"
+              }
+            },
+            "qubit_map": [
+              1,
+              5,
+              4,
+              6,
+              3,
+              2,
+              8,
+              7,
+              0
+            ],
+            "variant_id": "06ac9172-0339-7ce7-8000-268fe09e9ca3"
+          },
+          {
+            "shots": 64,
+            "results": {
+              "ionq.result.probabilities.json.v2": {
+                "id": "21c9858a-e6e7-4fd2-b890-c815623ac0fa",
+                "format": "ionq.result.probabilities.json.v2",
+                "media_type": "application/json"
+              }
+            },
+            "qubit_map": [
+              1,
+              5,
+              4,
+              6,
+              3,
+              2,
+              8,
+              7,
+              0
+            ],
+            "variant_id": "06ac9172-033b-7e83-8000-c9cb5b639860"
+          },
+          {
+            "shots": 64,
+            "results": {
+              "ionq.result.probabilities.json.v2": {
+                "id": "c6a6c4ad-e1e0-4d8d-9aa1-0e70380fba98",
+                "format": "ionq.result.probabilities.json.v2",
+                "media_type": "application/json"
+              }
+            },
+            "qubit_map": [
+              7,
+              4,
+              1,
+              0,
+              3,
+              5,
+              6,
+              8,
+              2
+            ],
+            "variant_id": "06ac9172-0342-7e79-8000-7cfe005256f9"
+          },
+          {
+            "shots": 64,
+            "results": {
+              "ionq.result.probabilities.json.v2": {
+                "id": "8af8e92c-2251-4854-baf9-a5c43a2e7f86",
+                "format": "ionq.result.probabilities.json.v2",
+                "media_type": "application/json"
+              }
+            },
+            "qubit_map": [
+              7,
+              4,
+              1,
+              0,
+              3,
+              5,
+              6,
+              8,
+              2
+            ],
+            "variant_id": "06ac9172-0345-7159-8000-caa41276b379"
+          },
+          {
+            "shots": 64,
+            "results": {
+              "ionq.result.probabilities.json.v2": {
+                "id": "905471bf-fdce-489a-ab6d-f15782b3ce17",
+                "format": "ionq.result.probabilities.json.v2",
+                "media_type": "application/json"
+              }
+            },
+            "qubit_map": [
+              2,
+              0,
+              6,
+              4,
+              7,
+              8,
+              5,
+              3,
+              1
+            ],
+            "variant_id": "06ac9172-0347-7717-8000-61b6d7b0c0f1"
+          },
+          {
+            "shots": 64,
+            "results": {
+              "ionq.result.probabilities.json.v2": {
+                "id": "06bd6123-a800-4b0e-b1bc-9179533b5ebb",
+                "format": "ionq.result.probabilities.json.v2",
+                "media_type": "application/json"
+              }
+            },
+            "qubit_map": [
+              2,
+              0,
+              6,
+              4,
+              7,
+              8,
+              5,
+              3,
+              1
+            ],
+            "variant_id": "06ac9172-0349-7767-8000-1d0cc35ba7dd"
+          },
+          {
+            "shots": 64,
+            "results": {
+              "ionq.result.probabilities.json.v2": {
+                "id": "f528cc93-d047-4350-92c1-eacb27051f29",
+                "format": "ionq.result.probabilities.json.v2",
+                "media_type": "application/json"
+              }
+            },
+            "qubit_map": [
+              0,
+              8,
+              4,
+              6,
+              7,
+              2,
+              5,
+              1,
+              3
+            ],
+            "variant_id": "06ac9172-034b-791d-8000-a2557d26b916"
+          },
+          {
+            "shots": 64,
+            "results": {
+              "ionq.result.probabilities.json.v2": {
+                "id": "544f13da-bb87-4d8a-951f-a49129e21e0c",
+                "format": "ionq.result.probabilities.json.v2",
+                "media_type": "application/json"
+              }
+            },
+            "qubit_map": [
+              0,
+              8,
+              4,
+              6,
+              7,
+              2,
+              5,
+              1,
+              3
+            ],
+            "variant_id": "06ac9172-034d-7ed6-8000-a5af5b4e1e85"
+          },
+          {
+            "shots": 64,
+            "results": {
+              "ionq.result.probabilities.json.v2": {
+                "id": "d489da73-9763-4a67-b49a-31fa41f23bb6",
+                "format": "ionq.result.probabilities.json.v2",
+                "media_type": "application/json"
+              }
+            },
+            "qubit_map": [
+              0,
+              7,
+              3,
+              8,
+              6,
+              2,
+              1,
+              4,
+              5
+            ],
+            "variant_id": "06ac9172-0350-70ce-8000-1d59974572b2"
+          },
+          {
+            "shots": 64,
+            "results": {
+              "ionq.result.probabilities.json.v2": {
+                "id": "5a142ec4-f299-4a6e-8e6b-205aa4d30478",
+                "format": "ionq.result.probabilities.json.v2",
+                "media_type": "application/json"
+              }
+            },
+            "qubit_map": [
+              0,
+              7,
+              3,
+              8,
+              6,
+              2,
+              1,
+              4,
+              5
+            ],
+            "variant_id": "06ac9172-0352-7456-8000-b3dc7d022eef"
+          },
+          {
+            "shots": 64,
+            "results": {
+              "ionq.result.probabilities.json.v2": {
+                "id": "7b599c27-eeb2-4d95-a180-66c0cffcb48b",
+                "format": "ionq.result.probabilities.json.v2",
+                "media_type": "application/json"
+              }
+            },
+            "qubit_map": [
+              0,
+              8,
+              1,
+              6,
+              7,
+              4,
+              2,
+              5,
+              3
+            ],
+            "variant_id": "06ac9172-0354-746c-8000-b9369494a52b"
+          },
+          {
+            "shots": 64,
+            "results": {
+              "ionq.result.probabilities.json.v2": {
+                "id": "0218d834-78c8-428c-8a14-344e0f40ae69",
+                "format": "ionq.result.probabilities.json.v2",
+                "media_type": "application/json"
+              }
+            },
+            "qubit_map": [
+              0,
+              8,
+              1,
+              6,
+              7,
+              4,
+              2,
+              5,
+              3
+            ],
+            "variant_id": "06ac9172-0356-76b6-8000-6d349dbc7f62"
+          },
+          {
+            "shots": 64,
+            "results": {
+              "ionq.result.probabilities.json.v2": {
+                "id": "7573f5a1-7e06-4128-93cf-6542a783bc14",
+                "format": "ionq.result.probabilities.json.v2",
+                "media_type": "application/json"
+              }
+            },
+            "qubit_map": [
+              5,
+              4,
+              8,
+              6,
+              1,
+              0,
+              7,
+              3,
+              2
+            ],
+            "variant_id": "06ac9172-0358-76d4-8000-d996784882ed"
+          },
+          {
+            "shots": 64,
+            "results": {
+              "ionq.result.probabilities.json.v2": {
+                "id": "98c202b0-449a-4343-aead-5df5bdbcc4e4",
+                "format": "ionq.result.probabilities.json.v2",
+                "media_type": "application/json"
+              }
+            },
+            "qubit_map": [
+              5,
+              4,
+              8,
+              6,
+              1,
+              0,
+              7,
+              3,
+              2
+            ],
+            "variant_id": "06ac9172-035a-7849-8000-adab9291c8f7"
+          },
+          {
+            "shots": 64,
+            "results": {
+              "ionq.result.probabilities.json.v2": {
+                "id": "91703dac-f360-4cba-8616-9430b5539d0b",
+                "format": "ionq.result.probabilities.json.v2",
+                "media_type": "application/json"
+              }
+            },
+            "qubit_map": [
+              0,
+              2,
+              4,
+              8,
+              6,
+              3,
+              5,
+              1,
+              7
+            ],
+            "variant_id": "06ac9172-035c-7664-8000-87d34c5e3ef3"
+          },
+          {
+            "shots": 64,
+            "results": {
+              "ionq.result.probabilities.json.v2": {
+                "id": "a91c6c7d-5ff7-49f0-8dc5-a2d20bacfd9a",
+                "format": "ionq.result.probabilities.json.v2",
+                "media_type": "application/json"
+              }
+            },
+            "qubit_map": [
+              0,
+              2,
+              4,
+              8,
+              6,
+              3,
+              5,
+              1,
+              7
+            ],
+            "variant_id": "06ac9172-035e-77c9-8000-4e43f6617063"
+          },
+          {
+            "shots": 64,
+            "results": {
+              "ionq.result.probabilities.json.v2": {
+                "id": "30235af6-1b72-45eb-b9fd-a4fb75a1b717",
+                "format": "ionq.result.probabilities.json.v2",
+                "media_type": "application/json"
+              }
+            },
+            "qubit_map": [
+              2,
+              7,
+              3,
+              4,
+              6,
+              5,
+              0,
+              8,
+              1
+            ],
+            "variant_id": "06ac9172-0360-751b-8000-64b29ca21b01"
+          },
+          {
+            "shots": 64,
+            "results": {
+              "ionq.result.probabilities.json.v2": {
+                "id": "e3c15904-26ce-405b-b339-217801b3d780",
+                "format": "ionq.result.probabilities.json.v2",
+                "media_type": "application/json"
+              }
+            },
+            "qubit_map": [
+              2,
+              7,
+              3,
+              4,
+              6,
+              5,
+              0,
+              8,
+              1
+            ],
+            "variant_id": "06ac9172-0362-77b0-8000-9f33fb6e4b6a"
+          },
+          {
+            "shots": 64,
+            "results": {
+              "ionq.result.probabilities.json.v2": {
+                "id": "bcc606e4-0710-45cd-9f18-d236048c42ea",
+                "format": "ionq.result.probabilities.json.v2",
+                "media_type": "application/json"
+              }
+            },
+            "qubit_map": [
+              8,
+              6,
+              5,
+              4,
+              7,
+              3,
+              2,
+              0,
+              1
+            ],
+            "variant_id": "06ac9172-0364-75ce-8000-4a23d9e2a0ed"
+          },
+          {
+            "shots": 64,
+            "results": {
+              "ionq.result.probabilities.json.v2": {
+                "id": "fb493332-8d7f-41f3-ba71-f5dfa341cdb4",
+                "format": "ionq.result.probabilities.json.v2",
+                "media_type": "application/json"
+              }
+            },
+            "qubit_map": [
+              8,
+              6,
+              5,
+              4,
+              7,
+              3,
+              2,
+              0,
+              1
+            ],
+            "variant_id": "06ac9172-0366-76e3-8000-a40fdd94a56b"
+          },
+          {
+            "shots": 64,
+            "results": {
+              "ionq.result.probabilities.json.v2": {
+                "id": "cb5e9266-7957-4d44-970d-31ede35e96f1",
+                "format": "ionq.result.probabilities.json.v2",
+                "media_type": "application/json"
+              }
+            },
+            "qubit_map": [
+              8,
+              0,
+              1,
+              5,
+              7,
+              3,
+              4,
+              2,
+              6
+            ],
+            "variant_id": "06ac9172-0368-75f5-8000-8224cf738cbb"
+          },
+          {
+            "shots": 64,
+            "results": {
+              "ionq.result.probabilities.json.v2": {
+                "id": "4fb1f162-5b58-45ab-8b2c-fa9b0b68723f",
+                "format": "ionq.result.probabilities.json.v2",
+                "media_type": "application/json"
+              }
+            },
+            "qubit_map": [
+              8,
+              0,
+              1,
+              5,
+              7,
+              3,
+              4,
+              2,
+              6
+            ],
+            "variant_id": "06ac9172-036a-767e-8000-3f9a600748e1"
+          },
+          {
+            "shots": 64,
+            "results": {
+              "ionq.result.probabilities.json.v2": {
+                "id": "f8a97022-d777-4376-8f7c-adac24abe8b3",
+                "format": "ionq.result.probabilities.json.v2",
+                "media_type": "application/json"
+              }
+            },
+            "qubit_map": [
+              7,
+              0,
+              5,
+              6,
+              4,
+              2,
+              3,
+              8,
+              1
+            ],
+            "variant_id": "06ac9172-036c-75f8-8000-47d53c5b436a"
+          },
+          {
+            "shots": 64,
+            "results": {
+              "ionq.result.probabilities.json.v2": {
+                "id": "c7476734-0a80-44f7-913b-e88230a6467a",
+                "format": "ionq.result.probabilities.json.v2",
+                "media_type": "application/json"
+              }
+            },
+            "qubit_map": [
+              7,
+              0,
+              5,
+              6,
+              4,
+              2,
+              3,
+              8,
+              1
+            ],
+            "variant_id": "06ac9172-036e-77a4-8000-57325fd30ce8"
+          }
+        ],
+        "num_variants": 32
+      },
+      "aggregations": {
+        "dnl": {
+          "id": "5c9e70e0-18ee-47b5-8a37-84e5d7c5deca",
+          "format": "ionq.result.histogram.json.v2",
+          "media_type": "application/json"
+        },
+        "voting": {
+          "id": "05e0ef10-f957-4dcb-9b1b-818bef6f381d",
+          "format": "ionq.result.histogram.json.v2",
+          "media_type": "application/json"
+        },
+        "average": {
+          "id": "e49b463b-134b-49a7-b237-85eda79190ed",
+          "format": "ionq.result.histogram.json.v2",
+          "media_type": "application/json"
+        },
+        "majority": {
+          "id": "5452e88a-d9f8-4714-a349-2a35510f5d10",
+          "format": "ionq.result.histogram.json.v2",
+          "media_type": "application/json"
+        }
+      },
+      "symmetry_verification": {
+        "applied": false,
+        "num_allowed_states": null
+      }
+    }
+  },
+  "child_job_ids": null,
+  "settings": {
+    "error_mitigation": {
+      "debiasing": true
+    }
+  },
+  "stats": {
+    "qubits": 9,
+    "circuits": 1,
+    "gate_counts": {
+      "1q": 135,
+      "2q": 46
+    },
+    "predicted_quantum_compute_time_us": 0,
+    "billed_quantum_compute_time_us": 0
+  },
+  "results": {
+    "probabilities": {
+      "url": "/v0.4/jobs/01a12182-4963-7232-a8a7-270051b5fa37/results/probabilities"
+    },
+    "ionq.result.probabilities.json.v2": {
+      "id": "d6c70401-89c3-4271-8006-82964128b087",
+      "format": "ionq.result.probabilities.json.v2",
+      "media_type": "application/json"
+    }
+  }
+}

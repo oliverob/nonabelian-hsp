@@ -1,0 +1,252 @@
+{
+  "type": "ionq.circuit.v1",
+  "name": "pairs_p3_q2_b2",
+  "backend": "qpu.forte-1",
+  "shots": 2048,
+  "input": {
+    "qubits": 5,
+    "gateset": "native",
+    "circuit": [
+      {
+        "gate": "gpi2",
+        "target": 0,
+        "phase": 0.5
+      },
+      {
+        "gate": "gpi2",
+        "target": 0,
+        "phase": 0.875
+      },
+      {
+        "gate": "gpi2",
+        "target": 1,
+        "phase": 0.5
+      },
+      {
+        "gate": "gpi2",
+        "target": 1,
+        "phase": 0.8040867239846964
+      },
+      {
+        "gate": "zz",
+        "targets": [
+          1,
+          0
+        ],
+        "angle": 0.25
+      },
+      {
+        "gate": "gpi2",
+        "target": 0,
+        "phase": 0.125
+      },
+      {
+        "gate": "gpi2",
+        "target": 0,
+        "phase": 0.25
+      },
+      {
+        "gate": "gpi2",
+        "target": 2,
+        "phase": 0.75
+      },
+      {
+        "gate": "gpi2",
+        "target": 3,
+        "phase": 0.5
+      },
+      {
+        "gate": "gpi2",
+        "target": 3,
+        "phase": 0.875
+      },
+      {
+        "gate": "gpi2",
+        "target": 4,
+        "phase": 0.5
+      },
+      {
+        "gate": "gpi2",
+        "target": 4,
+        "phase": 0.8040867239846964
+      },
+      {
+        "gate": "zz",
+        "targets": [
+          4,
+          3
+        ],
+        "angle": 0.25
+      },
+      {
+        "gate": "gpi2",
+        "target": 3,
+        "phase": 0.6250000000000001
+      },
+      {
+        "gate": "gpi2",
+        "target": 3,
+        "phase": 0.0
+      },
+      {
+        "gate": "zz",
+        "targets": [
+          0,
+          3
+        ],
+        "angle": 0.16666666666666663
+      },
+      {
+        "gate": "gpi",
+        "target": 0,
+        "phase": 0.6666666666666667
+      },
+      {
+        "gate": "zz",
+        "targets": [
+          1,
+          3
+        ],
+        "angle": 0.16666666666666669
+      },
+      {
+        "gate": "gpi",
+        "target": 1,
+        "phase": 0.30408672398469627
+      },
+      {
+        "gate": "zz",
+        "targets": [
+          2,
+          3
+        ],
+        "angle": 0.16666666666666663
+      },
+      {
+        "gate": "gpi",
+        "target": 2,
+        "phase": 0.75
+      },
+      {
+        "gate": "zz",
+        "targets": [
+          0,
+          4
+        ],
+        "angle": 0.16666666666666669
+      },
+      {
+        "gate": "gpi2",
+        "target": 0,
+        "phase": 0.28328137363320866
+      },
+      {
+        "gate": "gpi2",
+        "target": 0,
+        "phase": 0.6271093945374464
+      },
+      {
+        "gate": "zz",
+        "targets": [
+          1,
+          4
+        ],
+        "angle": 0.16666666666666663
+      },
+      {
+        "gate": "gpi2",
+        "target": 1,
+        "phase": 0.8735398878285908
+      },
+      {
+        "gate": "gpi2",
+        "target": 1,
+        "phase": 0.20641664244649816
+      },
+      {
+        "gate": "zz",
+        "targets": [
+          0,
+          1
+        ],
+        "angle": 0.2082439230621792
+      },
+      {
+        "gate": "gpi2",
+        "target": 0,
+        "phase": 0.4651959177445941
+      },
+      {
+        "gate": "gpi2",
+        "target": 0,
+        "phase": 0.753666268236396
+      },
+      {
+        "gate": "gpi2",
+        "target": 1,
+        "phase": 0.35808935962238336
+      },
+      {
+        "gate": "gpi2",
+        "target": 1,
+        "phase": 0.6225289090987804
+      },
+      {
+        "gate": "zz",
+        "targets": [
+          0,
+          1
+        ],
+        "angle": 0.12653480977398726
+      },
+      {
+        "gate": "gpi2",
+        "target": 0,
+        "phase": 0.12806253911985965
+      },
+      {
+        "gate": "gpi2",
+        "target": 0,
+        "phase": 0.8918902220429754
+      },
+      {
+        "gate": "gpi2",
+        "target": 1,
+        "phase": 0.250959329327867
+      },
+      {
+        "gate": "gpi2",
+        "target": 1,
+        "phase": 0.5335359775080533
+      },
+      {
+        "gate": "zz",
+        "targets": [
+          2,
+          4
+        ],
+        "angle": 0.16666666666666663
+      },
+      {
+        "gate": "gpi2",
+        "target": 2,
+        "phase": 0.8749999999999998
+      }
+    ]
+  },
+  "settings": {
+    "error_mitigation": {
+      "debiasing": true
+    }
+  },
+  "metadata": {
+    "p": "3",
+    "q": "2",
+    "b": "2",
+    "alpha": "2",
+    "method": "pairs",
+    "x_bits": "2",
+    "second_bits": "1",
+    "measured_qubits": "3"
+  }
+}

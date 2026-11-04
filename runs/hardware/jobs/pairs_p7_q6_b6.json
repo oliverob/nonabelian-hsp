@@ -1,0 +1,897 @@
+{
+  "type": "ionq.circuit.v1",
+  "name": "pairs_p7_q6_b6",
+  "backend": "qpu.forte-1",
+  "shots": 2048,
+  "input": {
+    "qubits": 9,
+    "gateset": "native",
+    "circuit": [
+      {
+        "gate": "gpi2",
+        "target": 0,
+        "phase": 0.5
+      },
+      {
+        "gate": "gpi2",
+        "target": 0,
+        "phase": 0.875
+      },
+      {
+        "gate": "gpi2",
+        "target": 1,
+        "phase": 0.5
+      },
+      {
+        "gate": "gpi2",
+        "target": 1,
+        "phase": 0.8766241427855751
+      },
+      {
+        "gate": "zz",
+        "targets": [
+          1,
+          0
+        ],
+        "angle": 0.25
+      },
+      {
+        "gate": "gpi2",
+        "target": 0,
+        "phase": 0.125
+      },
+      {
+        "gate": "gpi2",
+        "target": 0,
+        "phase": 0.25
+      },
+      {
+        "gate": "gpi2",
+        "target": 1,
+        "phase": 0.126624142785575
+      },
+      {
+        "gate": "gpi2",
+        "target": 1,
+        "phase": 0.5432908094522417
+      },
+      {
+        "gate": "gpi2",
+        "target": 2,
+        "phase": 2.1203697876423444e-16
+      },
+      {
+        "gate": "gpi2",
+        "target": 2,
+        "phase": 0.3479566380076519
+      },
+      {
+        "gate": "zz",
+        "targets": [
+          1,
+          2
+        ],
+        "angle": 0.25
+      },
+      {
+        "gate": "gpi2",
+        "target": 1,
+        "phase": 0.2932908094522415
+      },
+      {
+        "gate": "gpi2",
+        "target": 2,
+        "phase": 0.3479566380076518
+      },
+      {
+        "gate": "zz",
+        "targets": [
+          1,
+          2
+        ],
+        "angle": 0.09795663800765189
+      },
+      {
+        "gate": "gpi2",
+        "target": 1,
+        "phase": 0.4182908094522413
+      },
+      {
+        "gate": "gpi2",
+        "target": 2,
+        "phase": 0.09795663800765204
+      },
+      {
+        "gate": "gpi2",
+        "target": 2,
+        "phase": 0.22295663800765197
+      },
+      {
+        "gate": "gpi2",
+        "target": 3,
+        "phase": 0.75
+      },
+      {
+        "gate": "gpi2",
+        "target": 4,
+        "phase": 0.5
+      },
+      {
+        "gate": "gpi2",
+        "target": 4,
+        "phase": 0.875
+      },
+      {
+        "gate": "gpi2",
+        "target": 5,
+        "phase": 0.5
+      },
+      {
+        "gate": "gpi2",
+        "target": 5,
+        "phase": 0.8040867239846964
+      },
+      {
+        "gate": "zz",
+        "targets": [
+          5,
+          4
+        ],
+        "angle": 0.25
+      },
+      {
+        "gate": "gpi2",
+        "target": 4,
+        "phase": 0.6250000000000001
+      },
+      {
+        "gate": "gpi2",
+        "target": 4,
+        "phase": 0.0
+      },
+      {
+        "gate": "gpi2",
+        "target": 6,
+        "phase": 0.5
+      },
+      {
+        "gate": "gpi2",
+        "target": 6,
+        "phase": 0.875
+      },
+      {
+        "gate": "gpi2",
+        "target": 7,
+        "phase": 0.5
+      },
+      {
+        "gate": "gpi2",
+        "target": 7,
+        "phase": 0.8766241427855751
+      },
+      {
+        "gate": "zz",
+        "targets": [
+          7,
+          6
+        ],
+        "angle": 0.25
+      },
+      {
+        "gate": "gpi2",
+        "target": 6,
+        "phase": 0.6250000000000001
+      },
+      {
+        "gate": "gpi2",
+        "target": 6,
+        "phase": 0.0
+      },
+      {
+        "gate": "zz",
+        "targets": [
+          0,
+          6
+        ],
+        "angle": 0.07142857142857142
+      },
+      {
+        "gate": "zz",
+        "targets": [
+          1,
+          6
+        ],
+        "angle": 0.14285714285714285
+      },
+      {
+        "gate": "gpi",
+        "target": 1,
+        "phase": 0.8111479523093842
+      },
+      {
+        "gate": "zz",
+        "targets": [
+          2,
+          6
+        ],
+        "angle": 0.21428571428571427
+      },
+      {
+        "gate": "gpi",
+        "target": 2,
+        "phase": 0.972956638007652
+      },
+      {
+        "gate": "zz",
+        "targets": [
+          3,
+          6
+        ],
+        "angle": 0.17857142857142858
+      },
+      {
+        "gate": "zz",
+        "targets": [
+          4,
+          6
+        ],
+        "angle": 0.14285714285714285
+      },
+      {
+        "gate": "zz",
+        "targets": [
+          5,
+          6
+        ],
+        "angle": 0.17857142857142858
+      },
+      {
+        "gate": "gpi",
+        "target": 5,
+        "phase": 0.8040867239846963
+      },
+      {
+        "gate": "gpi2",
+        "target": 7,
+        "phase": 0.126624142785575
+      },
+      {
+        "gate": "gpi2",
+        "target": 7,
+        "phase": 0.5432908094522417
+      },
+      {
+        "gate": "gpi2",
+        "target": 8,
+        "phase": 2.1203697876423444e-16
+      },
+      {
+        "gate": "gpi2",
+        "target": 8,
+        "phase": 0.3479566380076519
+      },
+      {
+        "gate": "zz",
+        "targets": [
+          7,
+          8
+        ],
+        "angle": 0.25
+      },
+      {
+        "gate": "gpi2",
+        "target": 7,
+        "phase": 0.2932908094522415
+      },
+      {
+        "gate": "gpi2",
+        "target": 8,
+        "phase": 0.3479566380076518
+      },
+      {
+        "gate": "zz",
+        "targets": [
+          7,
+          8
+        ],
+        "angle": 0.09795663800765189
+      },
+      {
+        "gate": "gpi2",
+        "target": 7,
+        "phase": 0.9182908094522413
+      },
+      {
+        "gate": "zz",
+        "targets": [
+          0,
+          7
+        ],
+        "angle": 0.14285714285714285
+      },
+      {
+        "gate": "gpi",
+        "target": 0,
+        "phase": 0.7142857142857143
+      },
+      {
+        "gate": "zz",
+        "targets": [
+          1,
+          7
+        ],
+        "angle": 0.21428571428571427
+      },
+      {
+        "gate": "gpi",
+        "target": 1,
+        "phase": 0.3111479523093841
+      },
+      {
+        "gate": "zz",
+        "targets": [
+          2,
+          7
+        ],
+        "angle": 0.07142857142857142
+      },
+      {
+        "gate": "zz",
+        "targets": [
+          3,
+          7
+        ],
+        "angle": 0.10714285714285714
+      },
+      {
+        "gate": "zz",
+        "targets": [
+          4,
+          7
+        ],
+        "angle": 0.03571428571428571
+      },
+      {
+        "gate": "gpi",
+        "target": 4,
+        "phase": 0.75
+      },
+      {
+        "gate": "zz",
+        "targets": [
+          5,
+          7
+        ],
+        "angle": 0.14285714285714285
+      },
+      {
+        "gate": "gpi2",
+        "target": 8,
+        "phase": 0.09795663800765204
+      },
+      {
+        "gate": "gpi2",
+        "target": 8,
+        "phase": 0.22295663800765197
+      },
+      {
+        "gate": "zz",
+        "targets": [
+          0,
+          8
+        ],
+        "angle": 0.21428571428571427
+      },
+      {
+        "gate": "gpi2",
+        "target": 0,
+        "phase": 0.46049245078137135
+      },
+      {
+        "gate": "gpi2",
+        "target": 0,
+        "phase": 0.6167733379815816
+      },
+      {
+        "gate": "zz",
+        "targets": [
+          1,
+          8
+        ],
+        "angle": 0.07142857142857142
+      },
+      {
+        "gate": "gpi2",
+        "target": 1,
+        "phase": 0.12552701936196642
+      },
+      {
+        "gate": "gpi2",
+        "target": 1,
+        "phase": 0.4880438581197091
+      },
+      {
+        "gate": "zz",
+        "targets": [
+          2,
+          8
+        ],
+        "angle": 0.14285714285714285
+      },
+      {
+        "gate": "gpi2",
+        "target": 2,
+        "phase": 0.9227406635663614
+      },
+      {
+        "gate": "gpi2",
+        "target": 2,
+        "phase": 0.09731878149677947
+      },
+      {
+        "gate": "zz",
+        "targets": [
+          1,
+          2
+        ],
+        "angle": 0.24400412556222206
+      },
+      {
+        "gate": "gpi2",
+        "target": 1,
+        "phase": 0.7061835281231343
+      },
+      {
+        "gate": "gpi2",
+        "target": 1,
+        "phase": 0.8800694749441114
+      },
+      {
+        "gate": "gpi2",
+        "target": 2,
+        "phase": 0.09871110202649314
+      },
+      {
+        "gate": "gpi2",
+        "target": 2,
+        "phase": 0.2661148220476497
+      },
+      {
+        "gate": "zz",
+        "targets": [
+          0,
+          2
+        ],
+        "angle": 0.1757493440244617
+      },
+      {
+        "gate": "gpi2",
+        "target": 0,
+        "phase": 0.024320106129687206
+      },
+      {
+        "gate": "gpi2",
+        "target": 0,
+        "phase": 0.1642059150521583
+      },
+      {
+        "gate": "zz",
+        "targets": [
+          0,
+          1
+        ],
+        "angle": 0.16502867983259684
+      },
+      {
+        "gate": "gpi2",
+        "target": 0,
+        "phase": 0.765274242115858
+      },
+      {
+        "gate": "gpi2",
+        "target": 0,
+        "phase": 0.48942507949246905
+      },
+      {
+        "gate": "gpi2",
+        "target": 1,
+        "phase": 0.7634839281723355
+      },
+      {
+        "gate": "gpi2",
+        "target": 1,
+        "phase": 0.9701904547937332
+      },
+      {
+        "gate": "gpi2",
+        "target": 2,
+        "phase": 0.5716052715084317
+      },
+      {
+        "gate": "gpi2",
+        "target": 2,
+        "phase": 0.9018085648689929
+      },
+      {
+        "gate": "zz",
+        "targets": [
+          1,
+          2
+        ],
+        "angle": 0.24369997858827042
+      },
+      {
+        "gate": "gpi2",
+        "target": 1,
+        "phase": 0.19546375329118695
+      },
+      {
+        "gate": "gpi2",
+        "target": 1,
+        "phase": 0.4259282936913768
+      },
+      {
+        "gate": "gpi2",
+        "target": 2,
+        "phase": 0.22829840408088442
+      },
+      {
+        "gate": "gpi2",
+        "target": 2,
+        "phase": 0.6300566530827081
+      },
+      {
+        "gate": "zz",
+        "targets": [
+          0,
+          2
+        ],
+        "angle": 0.2005438050043188
+      },
+      {
+        "gate": "gpi2",
+        "target": 0,
+        "phase": 0.859975735191632
+      },
+      {
+        "gate": "gpi2",
+        "target": 0,
+        "phase": 0.027508367948750223
+      },
+      {
+        "gate": "zz",
+        "targets": [
+          0,
+          1
+        ],
+        "angle": 0.11122545428393099
+      },
+      {
+        "gate": "gpi2",
+        "target": 0,
+        "phase": 0.2687487798480812
+      },
+      {
+        "gate": "gpi2",
+        "target": 0,
+        "phase": 0.6591424377552761
+      },
+      {
+        "gate": "gpi2",
+        "target": 1,
+        "phase": 0.08219543249856787
+      },
+      {
+        "gate": "gpi2",
+        "target": 1,
+        "phase": 0.19606988827454153
+      },
+      {
+        "gate": "gpi2",
+        "target": 2,
+        "phase": 0.01457433076291803
+      },
+      {
+        "gate": "gpi2",
+        "target": 2,
+        "phase": 0.5636977337491427
+      },
+      {
+        "gate": "zz",
+        "targets": [
+          1,
+          2
+        ],
+        "angle": 0.20765338811375425
+      },
+      {
+        "gate": "gpi2",
+        "target": 1,
+        "phase": 0.25533868441351215
+      },
+      {
+        "gate": "gpi2",
+        "target": 1,
+        "phase": 0.30246372998421167
+      },
+      {
+        "gate": "gpi2",
+        "target": 2,
+        "phase": 0.7079355203475002
+      },
+      {
+        "gate": "gpi2",
+        "target": 2,
+        "phase": 0.8711342435682452
+      },
+      {
+        "gate": "zz",
+        "targets": [
+          0,
+          2
+        ],
+        "angle": 0.24916758183192025
+      },
+      {
+        "gate": "gpi2",
+        "target": 0,
+        "phase": 0.9343815815050083
+      },
+      {
+        "gate": "gpi2",
+        "target": 0,
+        "phase": 0.3593376209157144
+      },
+      {
+        "gate": "zz",
+        "targets": [
+          0,
+          1
+        ],
+        "angle": 0.08410657537696961
+      },
+      {
+        "gate": "gpi2",
+        "target": 0,
+        "phase": 0.3475835593129242
+      },
+      {
+        "gate": "gpi2",
+        "target": 0,
+        "phase": 0.47484900848311273
+      },
+      {
+        "gate": "gpi2",
+        "target": 1,
+        "phase": 0.34824299408439785
+      },
+      {
+        "gate": "gpi2",
+        "target": 1,
+        "phase": 0.6363918853656023
+      },
+      {
+        "gate": "gpi2",
+        "target": 2,
+        "phase": 0.8967587421512118
+      },
+      {
+        "gate": "gpi2",
+        "target": 2,
+        "phase": 0.25326928932684467
+      },
+      {
+        "gate": "zz",
+        "targets": [
+          1,
+          2
+        ],
+        "angle": 0.0883739316790331
+      },
+      {
+        "gate": "gpi2",
+        "target": 1,
+        "phase": 0.017173663856053345
+      },
+      {
+        "gate": "gpi2",
+        "target": 1,
+        "phase": 0.4168061866527495
+      },
+      {
+        "gate": "gpi2",
+        "target": 2,
+        "phase": 0.5448209854699719
+      },
+      {
+        "gate": "gpi2",
+        "target": 2,
+        "phase": 0.7918592362406898
+      },
+      {
+        "gate": "zz",
+        "targets": [
+          3,
+          8
+        ],
+        "angle": 0.21428571428571427
+      },
+      {
+        "gate": "gpi",
+        "target": 3,
+        "phase": 0.75
+      },
+      {
+        "gate": "zz",
+        "targets": [
+          4,
+          8
+        ],
+        "angle": 0.17857142857142858
+      },
+      {
+        "gate": "gpi2",
+        "target": 4,
+        "phase": 0.75
+      },
+      {
+        "gate": "zz",
+        "targets": [
+          3,
+          4
+        ],
+        "angle": 0.25
+      },
+      {
+        "gate": "gpi2",
+        "target": 4,
+        "phase": 0.0
+      },
+      {
+        "gate": "zz",
+        "targets": [
+          4,
+          6
+        ],
+        "angle": 0.07142857142857142
+      },
+      {
+        "gate": "gpi",
+        "target": 4,
+        "phase": 0.0
+      },
+      {
+        "gate": "zz",
+        "targets": [
+          4,
+          7
+        ],
+        "angle": 0.10714285714285714
+      },
+      {
+        "gate": "gpi",
+        "target": 4,
+        "phase": 0.5
+      },
+      {
+        "gate": "zz",
+        "targets": [
+          5,
+          8
+        ],
+        "angle": 0.03571428571428571
+      },
+      {
+        "gate": "zz",
+        "targets": [
+          4,
+          8
+        ],
+        "angle": 0.03571428571428571
+      },
+      {
+        "gate": "gpi2",
+        "target": 4,
+        "phase": 0.49999999999999956
+      },
+      {
+        "gate": "zz",
+        "targets": [
+          3,
+          4
+        ],
+        "angle": 0.25
+      },
+      {
+        "gate": "gpi2",
+        "target": 4,
+        "phase": 0.25
+      },
+      {
+        "gate": "gpi2",
+        "target": 5,
+        "phase": 0.804086723984696
+      },
+      {
+        "gate": "zz",
+        "targets": [
+          3,
+          5
+        ],
+        "angle": 0.25
+      },
+      {
+        "gate": "gpi2",
+        "target": 5,
+        "phase": 0.5540867239846965
+      },
+      {
+        "gate": "zz",
+        "targets": [
+          5,
+          6
+        ],
+        "angle": 0.03571428571428571
+      },
+      {
+        "gate": "zz",
+        "targets": [
+          5,
+          7
+        ],
+        "angle": 0.07142857142857142
+      },
+      {
+        "gate": "gpi",
+        "target": 5,
+        "phase": 0.5540867239846965
+      },
+      {
+        "gate": "zz",
+        "targets": [
+          5,
+          8
+        ],
+        "angle": 0.10714285714285714
+      },
+      {
+        "gate": "gpi2",
+        "target": 5,
+        "phase": 0.5540867239846965
+      },
+      {
+        "gate": "zz",
+        "targets": [
+          3,
+          5
+        ],
+        "angle": 0.25
+      },
+      {
+        "gate": "gpi2",
+        "target": 3,
+        "phase": 0.375
+      },
+      {
+        "gate": "gpi2",
+        "target": 5,
+        "phase": 0.30408672398469694
+      }
+    ]
+  },
+  "settings": {
+    "error_mitigation": {
+      "debiasing": true
+    }
+  },
+  "metadata": {
+    "p": "7",
+    "q": "6",
+    "b": "6",
+    "alpha": "3",
+    "method": "pairs",
+    "x_bits": "3",
+    "second_bits": "3",
+    "measured_qubits": "6"
+  }
+}

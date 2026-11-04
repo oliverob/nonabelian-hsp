@@ -1,0 +1,150 @@
+{
+  "seed": 20260923,
+  "trials": 20000,
+  "versions": {
+    "python": "3.12.11",
+    "qiskit": "2.4.1",
+    "qiskit_aer": "0.17.2",
+    "numpy": "2.4.6",
+    "matplotlib": "3.10.9"
+  },
+  "source": "IonQ Forte, 2,048 shots/circuit raw histograms; learning curves resample finite empirical distributions",
+  "interval_scope": "learning-curve intervals: percentiles over multinomial resamples of the histograms (finite-shot error); excluding device drift and variation between pooled debiasing variants",
+  "zne": {
+    "method": "exponential",
+    "fold": 3,
+    "bootstraps": 1000,
+    "figures": [
+      2,
+      3,
+      4
+    ],
+    "noise_check": [
+      {
+        "circuit": "adapted_p3_q2_b1",
+        "clean_base": 0.9486607142857143,
+        "clean_folded": 0.8604910714285714
+      },
+      {
+        "circuit": "adapted_p5_q2_b1",
+        "clean_base": 0.8926282051282052,
+        "clean_folded": 0.7155448717948718
+      },
+      {
+        "circuit": "adapted_p7_q2_b1",
+        "clean_base": 0.8708333333333333,
+        "clean_folded": 0.6395833333333334
+      },
+      {
+        "circuit": "adapted_p7_q3_b1",
+        "clean_base": 0.8729166666666667,
+        "clean_folded": 0.6666666666666667
+      },
+      {
+        "circuit": "adapted_p7_q6_b0",
+        "clean_base": 0.8666666666666667,
+        "clean_folded": 0.6729166666666666
+      },
+      {
+        "circuit": "adapted_p7_q6_b1",
+        "clean_base": 0.8791666666666667,
+        "clean_folded": 0.6166666666666667
+      },
+      {
+        "circuit": "adapted_p7_q6_b5",
+        "clean_base": 0.8395833333333333,
+        "clean_folded": 0.6125
+      },
+      {
+        "circuit": "h_only_p7_q2_b1",
+        "clean_base": 0.8776041666666666,
+        "clean_folded": 0.609375
+      },
+      {
+        "circuit": "h_only_p7_q2_b3",
+        "clean_base": 0.8333333333333334,
+        "clean_folded": 0.6119791666666667
+      },
+      {
+        "circuit": "h_only_p7_q2_b6",
+        "clean_base": 0.8567708333333334,
+        "clean_folded": 0.6614583333333333
+      },
+      {
+        "circuit": "pairs_p7_q2_b1",
+        "clean_base": 0.84375,
+        "clean_folded": 0.6484375
+      },
+      {
+        "circuit": "pairs_p7_q2_b3",
+        "clean_base": 0.87890625,
+        "clean_folded": 0.62109375
+      },
+      {
+        "circuit": "pairs_p7_q2_b6",
+        "clean_base": 0.8671875,
+        "clean_folded": 0.6640625
+      }
+    ],
+    "interval": "95% percentile over multinomial resamples of both histograms"
+  },
+  "adapted_peaks": [
+    {
+      "b": 0,
+      "conditional_success": 0.8303146086863572,
+      "retained": 1765.6174570034002,
+      "raw_conditional_success": 0.7616822429906542
+    },
+    {
+      "b": 1,
+      "conditional_success": 0.7487194564407753,
+      "retained": 1865.8330821390293,
+      "raw_conditional_success": 0.6124708624708625
+    },
+    {
+      "b": 5,
+      "conditional_success": 0.7943939717048106,
+      "retained": 1785.4212662795962,
+      "raw_conditional_success": 0.6380664652567976
+    }
+  ],
+  "single_shot_success": [
+    {
+      "p": 7,
+      "q": 2,
+      "success": 0.24162610443162746,
+      "theory": 0.24489795918367346
+    },
+    {
+      "p": 7,
+      "q": 3,
+      "success": 0.3640845239346172,
+      "theory": 0.3673469387755102
+    },
+    {
+      "p": 7,
+      "q": 6,
+      "success": 0.6821218413419681,
+      "theory": 0.7346938775510204
+    },
+    {
+      "p": 3,
+      "q": 2,
+      "success": 0.4009521372218567,
+      "theory": 0.4444444444444444
+    },
+    {
+      "p": 5,
+      "q": 2,
+      "success": 0.2802351595068359,
+      "theory": 0.32
+    },
+    {
+      "p": 7,
+      "q": 2,
+      "success": 0.24162610443162746,
+      "theory": 0.24489795918367346
+    }
+  ],
+  "h_sign_max_difference": 0.021523355559472435
+}

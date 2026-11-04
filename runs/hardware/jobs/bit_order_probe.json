@@ -1,0 +1,45 @@
+{
+  "type": "ionq.circuit.v1",
+  "name": "bit_order_probe",
+  "backend": "qpu.forte-1",
+  "shots": 100,
+  "input": {
+    "qubits": 3,
+    "gateset": "native",
+    "circuit": [
+      {
+        "gate": "gpi",
+        "target": 0,
+        "phase": 0
+      },
+      {
+        "gate": "gpi",
+        "target": 1,
+        "phase": 0
+      },
+      {
+        "gate": "gpi",
+        "target": 1,
+        "phase": 0
+      },
+      {
+        "gate": "gpi",
+        "target": 2,
+        "phase": 0
+      },
+      {
+        "gate": "gpi",
+        "target": 2,
+        "phase": 0
+      }
+    ]
+  },
+  "settings": {
+    "error_mitigation": {
+      "debiasing": false
+    }
+  },
+  "metadata": {
+    "purpose": "bit_order_probe"
+  }
+}

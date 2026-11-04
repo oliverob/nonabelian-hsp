@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite the paper below."
+title: "Code and data for: Solving a non-abelian Hidden Subgroup Problem on a trapped-ion quantum computer"
+type: software
+license: MIT
+authors:
+  - family-names: "O'Brien"
+    given-names: Oliver
+    affiliation: "Department of Applied Mathematics and Theoretical Physics, University of Cambridge"
+preferred-citation:
+  type: article
+  title: "Solving a non-abelian Hidden Subgroup Problem on a trapped-ion quantum computer: the power of measurement basis"
+  authors:
+    - family-names: "O'Brien"
+      given-names: Oliver
+      affiliation: "Department of Applied Mathematics and Theoretical Physics, University of Cambridge"
+  year: 2026

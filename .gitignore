@@ -1,0 +1,13 @@
+# Environment and secrets
+.venv/
+.env
+# Caches
+__pycache__/
+.pytest_cache/
+.mplconfig/
+# Noiseless reference and its simulation cache (rebuilt on demand)
+runs/ideal/
+# Logs and stray PDFs (paper drafts) in the root folder
+*.log
+/*.pdf
+.DS_Store

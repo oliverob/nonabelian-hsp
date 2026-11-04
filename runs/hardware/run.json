@@ -1,0 +1,12 @@
+{
+  "target": "hardware",
+  "backend": "qpu.forte-1",
+  "shots": 2048,
+  "zne_fold": 3,
+  "prepared": "2026-09-30",
+  "circuits": "3dc805f1d453fd7c8faab72edb41ab1cf76bc2df514eb7da57f4500bc4d7b71f",
+  "restamped": [
+    "2026-10-16: circuits.py changed only to allow adjacent pairs at odd q; every job file re-prepared byte-identical, so the circuits stamp was updated from 703b01c71fbb7652e4b462af7703c5038bf874d97a5472316c0ce5557bb34a9d",
+    "2026-10-16: theory() moved from circuits.py to theory.py; every job file rebuilt byte-identical, so the circuits stamp was updated from d9a63bd24744ba2a4b48dc73e9584a7052f9ac689486edd24f4a4767f7d7be02"
+  ]
+}

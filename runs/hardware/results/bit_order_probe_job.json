@@ -1,0 +1,74 @@
+{
+  "id": "01a12182-3c0b-7483-bef3-32d060ff0f78",
+  "type": "ionq.circuit.v1",
+  "status": "completed",
+  "name": "bit_order_probe",
+  "metadata": {
+    "purpose": "bit_order_probe"
+  },
+  "backend": "qpu.forte-1",
+  "parent_job_id": null,
+  "session_id": null,
+  "dry_run": false,
+  "failure": null,
+  "cost_model": "2QGE_operations",
+  "shots": 100,
+  "submitted_at": "2026-10-09T16:32:25.614Z",
+  "started_at": "2026-10-09T19:46:50.445Z",
+  "completed_at": "2026-10-09T19:46:53.177Z",
+  "execution_duration_ms": 1077,
+  "predicted_execution_duration_ms": 1770,
+  "predicted_wait_time_ms": null,
+  "output": {
+    "compilation": {
+      "precision": "1E-3",
+      "gate_basis": "ZZ",
+      "service_version": "v0.4",
+      "compiled_circuits": {
+        "ionq.native.v1": {
+          "id": "a99af021-4471-46c8-ba9e-df7fe2634f65",
+          "format": "ionq.native.v1",
+          "media_type": "application/json"
+        },
+        "ionq.qasm3.v1": {
+          "id": "06e4e250-079a-4654-a927-046429043090",
+          "format": "ionq.qasm3.v1",
+          "media_type": "text/plain"
+        }
+      }
+    },
+    "error_mitigation": {
+      "debiasing": false,
+      "symmetry_verification": {
+        "applied": false,
+        "num_allowed_states": null
+      }
+    }
+  },
+  "child_job_ids": null,
+  "settings": {
+    "error_mitigation": {
+      "debiasing": false
+    }
+  },
+  "stats": {
+    "qubits": 3,
+    "circuits": 1,
+    "gate_counts": {
+      "1q": 5,
+      "2q": 0
+    },
+    "predicted_quantum_compute_time_us": 0,
+    "billed_quantum_compute_time_us": 0
+  },
+  "results": {
+    "probabilities": {
+      "url": "/v0.4/jobs/01a12182-3c0b-7483-bef3-32d060ff0f78/results/probabilities"
+    },
+    "ionq.result.probabilities.json.v2": {
+      "id": "4db429eb-fc32-479a-bd29-c2a7d5be4939",
+      "format": "ionq.result.probabilities.json.v2",
+      "media_type": "application/json"
+    }
+  }
+}

@@ -1,0 +1,952 @@
+{
+  "seed": 20260923,
+  "trials": 20000,
+  "versions": {
+    "python": "3.12.11",
+    "qiskit": "2.4.1",
+    "qiskit_aer": "0.17.2",
+    "numpy": "2.4.6",
+    "matplotlib": "3.10.9"
+  },
+  "source": "IonQ Forte, 2,048 shots/circuit raw histograms; learning curves resample finite empirical distributions",
+  "interval_scope": "learning-curve intervals: percentiles over multinomial resamples of the histograms (finite-shot error); excluding device drift and variation between pooled debiasing variants",
+  "weak_spread": [
+    {
+      "p": 7,
+      "q": 2,
+      "max_pairwise_tv": 0.05029296875
+    },
+    {
+      "p": 7,
+      "q": 6,
+      "max_pairwise_tv": 0.04443359375
+    }
+  ],
+  "weak_max_error": 0.05154854910714285,
+  "weak_max_invalid": 0.0546875,
+  "forgetful_same_orbit_max_difference": 0.02685546875,
+  "forgetful_other_orbit_tv": 0.33935546875,
+  "learning_bootstrap": {
+    "repeats": 1000,
+    "trials": 20000,
+    "exact_max": 4,
+    "interval": "pointwise 95% percentile over multinomial resamples of every secret's histogram",
+    "assumptions": "shots i.i.d. within a job, secrets independent; excludes drift and variation between pooled debiasing variants",
+    "curves": {
+      "adapted_ml": {
+        "max_bias": 0.003818200000000105,
+        "max_monte_carlo_se": 0.00349914702106099,
+        "censored_n90": 0
+      },
+      "adapted": {
+        "max_bias": 0.013072499999999154,
+        "max_monte_carlo_se": 0.003533790528596736,
+        "censored_n90": 0
+      },
+      "pairs_ml": {
+        "max_bias": 0.003510200000000463,
+        "max_monte_carlo_se": 0.0035351972363646136,
+        "censored_n90": 0
+      },
+      "pairs": {
+        "max_bias": 0.0029004000000003582,
+        "max_monte_carlo_se": 0.0035333179166330336,
+        "censored_n90": 0
+      },
+      "forgetful": {
+        "max_bias": 0.0011825500000000044,
+        "max_monte_carlo_se": 0.003534282883414965,
+        "censored_n90": 1000
+      }
+    }
+  },
+  "learning_noiseless": {
+    "p": 7,
+    "q": 2,
+    "seed": 20260923,
+    "trials": 20000,
+    "sample_sizes": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      8,
+      12,
+      16,
+      24,
+      32,
+      48,
+      64,
+      96,
+      128,
+      192,
+      256,
+      384,
+      512,
+      768,
+      1024,
+      1536,
+      2048
+    ],
+    "law": "exact ideal Aer statevector probabilities",
+    "curves": {
+      "adapted_ml": {
+        "success": [
+          0.144,
+          0.26655,
+          0.3917,
+          0.4945,
+          0.5909,
+          0.81965,
+          0.9196,
+          0.9635,
+          0.99165,
+          0.9985,
+          0.9999,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "final": 1.0,
+        "at_one": 0.26655
+      },
+      "adapted": {
+        "success": [
+          0.14285714285714282,
+          0.2653061224489796,
+          0.282798833819242,
+          0.30671743916225375,
+          0.33811106402458585,
+          0.43405,
+          0.5061,
+          0.5681,
+          0.6716,
+          0.74845,
+          0.85245,
+          0.9118,
+          0.9686,
+          0.98795,
+          0.9987,
+          0.9998,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "final": 1.0,
+        "at_one": 0.2653061224489796
+      },
+      "pairs_ml": {
+        "success": [
+          0.1438,
+          0.2607,
+          0.3894,
+          0.4922,
+          0.5885,
+          0.8288,
+          0.92875,
+          0.97035,
+          0.9947,
+          0.9989,
+          0.99995,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "final": 1.0,
+        "at_one": 0.2607
+      },
+      "pairs": {
+        "success": [
+          0.1438,
+          0.2607,
+          0.38425,
+          0.4836,
+          0.5669,
+          0.78135,
+          0.88895,
+          0.9435,
+          0.9864,
+          0.9966,
+          0.9997,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "final": 1.0,
+        "at_one": 0.2607
+      },
+      "forgetful": {
+        "success": [
+          0.1454,
+          0.2599,
+          0.3455,
+          0.4191,
+          0.4612,
+          0.5359,
+          0.55695,
+          0.5726,
+          0.57755,
+          0.57395,
+          0.57155,
+          0.5767,
+          0.5701,
+          0.5741,
+          0.57075,
+          0.57325,
+          0.5703,
+          0.5687,
+          0.57335,
+          0.5768,
+          0.57205,
+          0.5719
+        ],
+        "final": 0.5719,
+        "at_one": 0.2599
+      }
+    }
+  },
+  "learning": {
+    "p": 7,
+    "q": 2,
+    "alpha": 6,
+    "trials": 20000,
+    "seed": 20260923,
+    "sample_sizes": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      8,
+      12,
+      16,
+      24,
+      32,
+      48,
+      64,
+      96,
+      128,
+      192,
+      256,
+      384,
+      512,
+      768,
+      1024,
+      1536,
+      2048
+    ],
+    "final": {
+      "adapted_ml": {
+        "success": 1.0,
+        "low": 1.0,
+        "high": 1.0
+      },
+      "adapted": {
+        "success": 1.0,
+        "low": 0.99995,
+        "high": 1.0
+      },
+      "pairs_ml": {
+        "success": 1.0,
+        "low": 1.0,
+        "high": 1.0
+      },
+      "pairs": {
+        "success": 1.0,
+        "low": 1.0,
+        "high": 1.0
+      },
+      "forgetful": {
+        "success": 0.5719,
+        "low": 0.5719,
+        "high": 0.5719
+      }
+    },
+    "at_one": {
+      "adapted_ml": {
+        "success": 0.22465,
+        "low": 0.21914750000000002,
+        "high": 0.2338
+      },
+      "adapted": {
+        "success": 0.22880460778061226,
+        "low": 0.2221156529017857,
+        "high": 0.23565125757334182
+      },
+      "pairs_ml": {
+        "success": 0.24485,
+        "low": 0.23804875,
+        "high": 0.25165125
+      },
+      "pairs": {
+        "success": 0.24485,
+        "low": 0.23804875,
+        "high": 0.25165125
+      },
+      "forgetful": {
+        "success": 0.2459,
+        "low": 0.24284875,
+        "high": 0.25080125000000003
+      }
+    },
+    "classical": {
+      "p": 7,
+      "q": 2,
+      "guarantee": 5,
+      "n90_integer": 5,
+      "recovery": [
+        0.14285714285714285,
+        0.14285714285714285,
+        0.2857142857142857,
+        0.42857142857142855,
+        0.7142857142857143,
+        1.0
+      ]
+    },
+    "forgetful_cap": 0.5714285714285714,
+    "adapted_one_query_theory": 0.2653061224489796
+  },
+  "learning_affine_bootstrap": {
+    "repeats": 1000,
+    "trials": 20000,
+    "exact_max": 4,
+    "interval": "pointwise 95% percentile over multinomial resamples of every secret's histogram",
+    "assumptions": "shots i.i.d. within a job, secrets independent; excludes drift and variation between pooled debiasing variants",
+    "curves": {
+      "adapted_ml": {
+        "max_bias": 0.0010513499999994513,
+        "max_monte_carlo_se": 0.003506451197435949,
+        "censored_n90": 0
+      },
+      "adapted": {
+        "max_bias": 0.0005991999999999109,
+        "max_monte_carlo_se": 0.003502315453158449,
+        "censored_n90": 0
+      },
+      "pairs_ml": {
+        "max_bias": 0.004460049999999993,
+        "max_monte_carlo_se": 0.003509814525014107,
+        "censored_n90": 0
+      },
+      "pairs": {
+        "max_bias": 0.003121050000000125,
+        "max_monte_carlo_se": 0.0035076253363208565,
+        "censored_n90": 0
+      },
+      "forgetful": {
+        "max_bias": 0.000981249999999989,
+        "max_monte_carlo_se": 0.0032089093941711725,
+        "censored_n90": 1000
+      }
+    }
+  },
+  "learning_affine_noiseless": {
+    "p": 7,
+    "q": 6,
+    "seed": 20330929,
+    "trials": 20000,
+    "sample_sizes": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      8,
+      12,
+      16,
+      24,
+      32,
+      48,
+      64,
+      96,
+      128,
+      192,
+      256,
+      384,
+      512,
+      768,
+      1024,
+      1536,
+      2048
+    ],
+    "law": "exact ideal Aer statevector probabilities",
+    "curves": {
+      "adapted_ml": {
+        "success": [
+          0.1497,
+          0.75345,
+          0.83995,
+          0.91975,
+          0.9616,
+          0.99825,
+          0.99995,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "final": 1.0,
+        "at_one": 0.75345
+      },
+      "adapted": {
+        "success": [
+          0.14285714285714282,
+          0.7551020408163265,
+          0.8425655976676385,
+          0.9193193312310343,
+          0.9617579167086604,
+          0.99825,
+          0.99995,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "final": 1.0,
+        "at_one": 0.7551020408163265
+      },
+      "pairs_ml": {
+        "success": [
+          0.1428,
+          0.2616,
+          0.37965,
+          0.48875,
+          0.5828,
+          0.825,
+          0.92805,
+          0.9706,
+          0.99485,
+          0.999,
+          0.99995,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "final": 1.0,
+        "at_one": 0.2616
+      },
+      "pairs": {
+        "success": [
+          0.1428,
+          0.2616,
+          0.37675,
+          0.481,
+          0.5605,
+          0.7741,
+          0.88625,
+          0.94465,
+          0.98715,
+          0.99645,
+          0.99975,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "final": 1.0,
+        "at_one": 0.2616
+      },
+      "forgetful": {
+        "success": [
+          0.14175,
+          0.26565,
+          0.2816,
+          0.28585,
+          0.28605,
+          0.28655,
+          0.2849,
+          0.2897,
+          0.2858,
+          0.28735,
+          0.28375,
+          0.28905,
+          0.2886,
+          0.2899,
+          0.28565,
+          0.28585,
+          0.28855,
+          0.28425,
+          0.2855,
+          0.2901,
+          0.28995,
+          0.28535
+        ],
+        "final": 0.28535,
+        "at_one": 0.26565
+      }
+    }
+  },
+  "learning_affine": {
+    "p": 7,
+    "q": 6,
+    "alpha": 3,
+    "trials": 20000,
+    "seed": 20330929,
+    "sample_sizes": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      8,
+      12,
+      16,
+      24,
+      32,
+      48,
+      64,
+      96,
+      128,
+      192,
+      256,
+      384,
+      512,
+      768,
+      1024,
+      1536,
+      2048
+    ],
+    "final": {
+      "adapted_ml": {
+        "success": 1.0,
+        "low": 1.0,
+        "high": 1.0
+      },
+      "adapted": {
+        "success": 1.0,
+        "low": 1.0,
+        "high": 1.0
+      },
+      "pairs_ml": {
+        "success": 1.0,
+        "low": 1.0,
+        "high": 1.0
+      },
+      "pairs": {
+        "success": 1.0,
+        "low": 1.0,
+        "high": 1.0
+      },
+      "forgetful": {
+        "success": 0.28535,
+        "low": 0.28535,
+        "high": 0.28535
+      }
+    },
+    "at_one": {
+      "adapted_ml": {
+        "success": 0.564,
+        "low": 0.55624625,
+        "high": 0.5734
+      },
+      "adapted": {
+        "success": 0.5683793048469388,
+        "low": 0.56097412109375,
+        "high": 0.5763375418526785
+      },
+      "pairs_ml": {
+        "success": 0.2303,
+        "low": 0.22414874999999998,
+        "high": 0.23875125
+      },
+      "pairs": {
+        "success": 0.2303,
+        "low": 0.22414874999999998,
+        "high": 0.23875125
+      },
+      "forgetful": {
+        "success": 0.25105,
+        "low": 0.24875,
+        "high": 0.25355
+      }
+    },
+    "classical": {
+      "p": 7,
+      "q": 6,
+      "guarantee": 4,
+      "n90_integer": 4,
+      "recovery": [
+        0.14285714285714285,
+        0.14285714285714285,
+        0.2857142857142857,
+        0.5714285714285714,
+        1.0
+      ]
+    },
+    "forgetful_cap": 0.2857142857142857,
+    "adapted_one_query_theory": 0.7551020408163265
+  },
+  "shot_accounting": [
+    {
+      "file": "adapted_p3_q2_b1.npz",
+      "shots": 2048,
+      "invalid": 46,
+      "k_zero": 676
+    },
+    {
+      "file": "adapted_p5_q2_b1.npz",
+      "shots": 2048,
+      "invalid": 134,
+      "k_zero": 396
+    },
+    {
+      "file": "adapted_p7_q2_b0.npz",
+      "shots": 2048,
+      "invalid": 56,
+      "k_zero": 293
+    },
+    {
+      "file": "adapted_p7_q2_b1.npz",
+      "shots": 2048,
+      "invalid": 62,
+      "k_zero": 287
+    },
+    {
+      "file": "adapted_p7_q2_b2.npz",
+      "shots": 2048,
+      "invalid": 78,
+      "k_zero": 275
+    },
+    {
+      "file": "adapted_p7_q2_b3.npz",
+      "shots": 2048,
+      "invalid": 66,
+      "k_zero": 290
+    },
+    {
+      "file": "adapted_p7_q2_b4.npz",
+      "shots": 2048,
+      "invalid": 55,
+      "k_zero": 258
+    },
+    {
+      "file": "adapted_p7_q2_b5.npz",
+      "shots": 2048,
+      "invalid": 64,
+      "k_zero": 274
+    },
+    {
+      "file": "adapted_p7_q2_b6.npz",
+      "shots": 2048,
+      "invalid": 79,
+      "k_zero": 251
+    },
+    {
+      "file": "adapted_p7_q3_b1.npz",
+      "shots": 2048,
+      "invalid": 61,
+      "k_zero": 279
+    },
+    {
+      "file": "adapted_p7_q6_b0.npz",
+      "shots": 2048,
+      "invalid": 64,
+      "k_zero": 272
+    },
+    {
+      "file": "adapted_p7_q6_b1.npz",
+      "shots": 2048,
+      "invalid": 58,
+      "k_zero": 274
+    },
+    {
+      "file": "adapted_p7_q6_b2.npz",
+      "shots": 2048,
+      "invalid": 76,
+      "k_zero": 276
+    },
+    {
+      "file": "adapted_p7_q6_b3.npz",
+      "shots": 2048,
+      "invalid": 61,
+      "k_zero": 296
+    },
+    {
+      "file": "adapted_p7_q6_b4.npz",
+      "shots": 2048,
+      "invalid": 64,
+      "k_zero": 249
+    },
+    {
+      "file": "adapted_p7_q6_b5.npz",
+      "shots": 2048,
+      "invalid": 77,
+      "k_zero": 316
+    },
+    {
+      "file": "adapted_p7_q6_b6.npz",
+      "shots": 2048,
+      "invalid": 69,
+      "k_zero": 265
+    },
+    {
+      "file": "forgetful_p7_q2_b0.npz",
+      "shots": 2048,
+      "invalid": 36,
+      "k_zero": 264
+    },
+    {
+      "file": "forgetful_p7_q2_b1.npz",
+      "shots": 2048,
+      "invalid": 34,
+      "k_zero": 270
+    },
+    {
+      "file": "forgetful_p7_q2_b2.npz",
+      "shots": 2048,
+      "invalid": 33,
+      "k_zero": 286
+    },
+    {
+      "file": "forgetful_p7_q2_b3.npz",
+      "shots": 2048,
+      "invalid": 39,
+      "k_zero": 285
+    },
+    {
+      "file": "forgetful_p7_q2_b4.npz",
+      "shots": 2048,
+      "invalid": 38,
+      "k_zero": 294
+    },
+    {
+      "file": "forgetful_p7_q2_b5.npz",
+      "shots": 2048,
+      "invalid": 42,
+      "k_zero": 271
+    },
+    {
+      "file": "forgetful_p7_q2_b6.npz",
+      "shots": 2048,
+      "invalid": 31,
+      "k_zero": 278
+    },
+    {
+      "file": "forgetful_p7_q3_b1.npz",
+      "shots": 2048,
+      "invalid": 49,
+      "k_zero": 334
+    },
+    {
+      "file": "forgetful_p7_q3_b2.npz",
+      "shots": 2048,
+      "invalid": 60,
+      "k_zero": 268
+    },
+    {
+      "file": "forgetful_p7_q3_b3.npz",
+      "shots": 2048,
+      "invalid": 60,
+      "k_zero": 290
+    },
+    {
+      "file": "forgetful_p7_q6_b0.npz",
+      "shots": 2048,
+      "invalid": 59,
+      "k_zero": 277
+    },
+    {
+      "file": "forgetful_p7_q6_b1.npz",
+      "shots": 2048,
+      "invalid": 89,
+      "k_zero": 288
+    },
+    {
+      "file": "forgetful_p7_q6_b2.npz",
+      "shots": 2048,
+      "invalid": 100,
+      "k_zero": 264
+    },
+    {
+      "file": "forgetful_p7_q6_b3.npz",
+      "shots": 2048,
+      "invalid": 89,
+      "k_zero": 270
+    },
+    {
+      "file": "forgetful_p7_q6_b4.npz",
+      "shots": 2048,
+      "invalid": 112,
+      "k_zero": 241
+    },
+    {
+      "file": "forgetful_p7_q6_b5.npz",
+      "shots": 2048,
+      "invalid": 101,
+      "k_zero": 286
+    },
+    {
+      "file": "forgetful_p7_q6_b6.npz",
+      "shots": 2048,
+      "invalid": 106,
+      "k_zero": 267
+    },
+    {
+      "file": "h_only_p7_q2_b1.npz",
+      "shots": 2048,
+      "invalid": 27,
+      "k_zero": 282
+    },
+    {
+      "file": "h_only_p7_q2_b3.npz",
+      "shots": 2048,
+      "invalid": 33,
+      "k_zero": 268
+    },
+    {
+      "file": "h_only_p7_q2_b6.npz",
+      "shots": 2048,
+      "invalid": 31,
+      "k_zero": 281
+    },
+    {
+      "file": "pairs_p7_q2_b0.npz",
+      "shots": 2048,
+      "invalid": 37,
+      "k_zero": 276
+    },
+    {
+      "file": "pairs_p7_q2_b1.npz",
+      "shots": 2048,
+      "invalid": 40,
+      "k_zero": 271
+    },
+    {
+      "file": "pairs_p7_q2_b2.npz",
+      "shots": 2048,
+      "invalid": 21,
+      "k_zero": 268
+    },
+    {
+      "file": "pairs_p7_q2_b3.npz",
+      "shots": 2048,
+      "invalid": 31,
+      "k_zero": 289
+    },
+    {
+      "file": "pairs_p7_q2_b4.npz",
+      "shots": 2048,
+      "invalid": 36,
+      "k_zero": 274
+    },
+    {
+      "file": "pairs_p7_q2_b5.npz",
+      "shots": 2048,
+      "invalid": 33,
+      "k_zero": 277
+    },
+    {
+      "file": "pairs_p7_q2_b6.npz",
+      "shots": 2048,
+      "invalid": 34,
+      "k_zero": 263
+    },
+    {
+      "file": "pairs_p7_q6_b0.npz",
+      "shots": 2048,
+      "invalid": 48,
+      "k_zero": 285
+    },
+    {
+      "file": "pairs_p7_q6_b1.npz",
+      "shots": 2048,
+      "invalid": 74,
+      "k_zero": 265
+    },
+    {
+      "file": "pairs_p7_q6_b2.npz",
+      "shots": 2048,
+      "invalid": 77,
+      "k_zero": 305
+    },
+    {
+      "file": "pairs_p7_q6_b3.npz",
+      "shots": 2048,
+      "invalid": 97,
+      "k_zero": 267
+    },
+    {
+      "file": "pairs_p7_q6_b4.npz",
+      "shots": 2048,
+      "invalid": 75,
+      "k_zero": 305
+    },
+    {
+      "file": "pairs_p7_q6_b5.npz",
+      "shots": 2048,
+      "invalid": 77,
+      "k_zero": 275
+    },
+    {
+      "file": "pairs_p7_q6_b6.npz",
+      "shots": 2048,
+      "invalid": 80,
+      "k_zero": 277
+    }
+  ]
+}

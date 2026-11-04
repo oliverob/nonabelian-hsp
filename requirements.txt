@@ -1,0 +1,7 @@
+# Pinned versions used for the checked-in results (Python 3.12).
+numpy==2.4.6
+scipy==1.17.1        # qiskit dependency, pinned for reproducibility
+matplotlib==3.10.9
+qiskit==2.4.1
+qiskit-aer==0.17.2
+pyencode @ git+https://github.com/UW-ERSL/PyEncode.git@2f06b255531eecd276326e808e3ea8160f37237e
